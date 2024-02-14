@@ -7,5 +7,5 @@ export const todos = sqliteTable('todos', {
   completed: integer('completed', { mode: 'boolean' }).notNull()
 });
 
-export type Todo = 
+export type Todo = {};
 export type NewTodo = InferModel<typeof todos, "insert">;
